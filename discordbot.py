@@ -17,14 +17,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
-@client.event
-async def neko(ctx):
-    # メッセージ送信者がBotだった場合は無視する
-    if ctx.author.bot:
-        return
-    # 「/neko」と発言したら「にゃーん」が返る処理
-    if ctx.content == '/neko':
-        await ctx.channel.send('にゃーん')
+
         
 
 bot.run(token)
