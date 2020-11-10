@@ -23,7 +23,7 @@ async def neko(ctx):
     if ctx.author.bot:
         return
     # 「/neko」と発言したら「にゃーん」が返る処理
-    if message.content == '/neko':
+    if ctx.content == '/neko':
         await ctx.channel.send('にゃーん')
         
 
